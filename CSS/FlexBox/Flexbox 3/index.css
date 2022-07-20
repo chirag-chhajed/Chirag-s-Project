@@ -1,0 +1,68 @@
+*{
+    border: dotted black 1px;
+
+}
+body{
+    margin: 0%;
+}
+main{
+margin: 0;
+height: 715px
+;
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+.div{
+display: flex;
+height: 715px;
+}
+.flexitem1{
+display: flex;
+
+width: 25%;
+
+background-color: hotpink;
+
+}
+.flexitem2{
+display: flex;
+flex-direction: column;
+
+width: 75%;
+
+background-color: yellow;
+}
+nav{
+
+border: none;
+margin-left: 20px;
+margin-top: 250px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+header{
+height: 200px;
+text-align: center;
+padding-top: 100px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+article{
+height: 300px;
+text-align: center;
+padding-top: 150px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+footer{
+height: 215px;
+text-align: center;
+padding-top: 108px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}

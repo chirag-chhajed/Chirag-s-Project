@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.container div{
+    border: 2px black dotted;
+    background-color: hotpink;
+    margin: 5px;
+  
+}
+#img1, #img2, #img3{
+    height: 200px;
+    padding: 10px;
+    margin: 50px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+p{
+    background-color: yellow;
+    font-family: fantasy;
+    padding: 10px;
+}
