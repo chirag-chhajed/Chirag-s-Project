@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage using grid</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            margin: 0;
+            height: 715px;
+            width: 100%;
+        }
+        .column1{
+            display: grid;
+            grid-template-rows: 100%;
+            height: 715px;
+            background-color: yellow;
+            margin-right: 5px;
+
+        }
+        .column2{
+            height: 715px;
+            width: 100%;
+            display: grid;
+            /* background-color: hotpink; */
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 25% 50% 25%;
+            grid-template-areas: "header header"
+            "article advertisment"
+            "footer footer";
+           
+        }
+        header{
+            grid-area: header;
+            background-color: cornflowerblue;
+            margin: 3px;
+        }
+        article{
+            grid-area: article;
+            background-color: gold;
+            margin: 3px;
+        }
+        section{
+            grid-area: advertisment;
+            background-color: brown;
+            margin: 3px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: darkseagreen;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="column1"><nav>navigation</nav></div>
+        <div class="column2"><header>Header</header>
+        <article>Article</article>
+    <section>Advertisement</section>
+<footer>Footer</footer></div>
+    </main>
+</body>
+</html>
