@@ -1,57 +1,58 @@
-
-        .layer1{
-            display: flex;
-        }
-        #box1, #box2, #box3{
-            height: 250px;
-            width: 100%;
-            background-color: orange;
-            border: 2px dotted black;
-            margin: 2px;
-        }
-        .layer2{
-            display: flex;
-        }
-        .layer2 div{
-            height: 250px;
-            width: 100%;
-            background-color: orange;
-            border: 2px dotted black;
-            margin: 2px;
-        }
-        .layer3{
-            display: flex;
-        }
-        .layer3 div{
-            height: 250px;
-            width: 100%;
-            background-color: orange;
-            border: 2px dotted black;
-            margin: 2px;
-        }
-        .sublayer1, .sublayer2, .sublayer3{
-            display: flex;
-           
-        }
-        .sublayer1 div{
-            background-color: yellow;
-            height: 71px;
-            width: 100%;
-            margin: 2px;
-            border: solid black 1px;
-        }
-        .sublayer2 div{
-            background-color: yellow;
-            height: 71px;
-            width: 100%;
-            margin: 2px;
-            border: solid black 1px;
-        }
-        .sublayer3 div{
-            background-color: yellow;
-            height: 71px;
-            width: 100%;
-            margin: 2px;
-            border: solid black 1px;
-        }
-    
+.layer1 {
+  display: flex;
+}
+#box1,
+#box2,
+#box3 {
+  height: 250px;
+  width: 100%;
+  background-color: orange;
+  border: 2px dotted black;
+  margin: 2px;
+}
+.layer2 {
+  display: flex;
+}
+.layer2 div {
+  height: 250px;
+  width: 100%;
+  background-color: orange;
+  border: 2px dotted black;
+  margin: 2px;
+}
+.layer3 {
+  display: flex;
+}
+.layer3 div {
+  height: 250px;
+  width: 100%;
+  background-color: orange;
+  border: 2px dotted black;
+  margin: 2px;
+}
+.sublayer1,
+.sublayer2,
+.sublayer3 {
+  display: flex;
+}
+.sublayer1 div {
+  background-color: yellow;
+  height: 71px;
+  width: 100%;
+  margin: 2px;
+  border: solid black 1px;
+}
+.sublayer2 div {
+  background-color: yellow;
+  height: 71px;
+  width: 100%;
+  margin: 2px;
+  border: solid black 1px;
+}
+.sublayer3 div {
+  background-color: yellow;
+  height: 71px;
+  width: 100%;
+  margin: 2px;
+  border: solid black 1px;
+}
