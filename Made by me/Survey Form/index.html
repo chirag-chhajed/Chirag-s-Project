@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1>Crework Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <main>
+        <form action="">
+            <div class="form-section">
+                <label for="firstname" id="firstname-label">First Name* </label>
+                <input type="text" name="firstname" placeholder="First Name" maxlength="15" required />
+            </div>
+            <div class="form-section">
+                <label for="lastname" id="lastname-label">Last Name* </label>
+                <input type="text" name="lastname" placeholder="Last Name" maxlength="15" required />
+            </div>
+            <div class="form-section">
+                <label for="email" id="email-label">Email* </label>
+                <input type="email" name="email" placeholder="example@mail.com" required />
+            </div>
+            <div class="form-section">
+                <label for="role" id="role-label">Which option describe your current role?</label>
+                <select name="role">
+                    <option disabled selected value="">Select an role</option>
+                    <option value="Student">Student</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="no">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-section" id="radio">
+                <label>Would you recommend Crework to a friend?</label>
+                <label style="background-color: royalblue ; box-shadow: none;" for="recommend"><input type="radio" name="recommend" value="Definately">Definately</label>
+                <label  style="background-color: royalblue ; box-shadow: none" for="recommend"><input type="radio" name="recommend" value="Maybe"> May Be</label>
+                <label  style="background-color: royalblue ; box-shadow: none" for="recommend">  <input type="radio" name="recommend" value="Not sure"> Not Sure</label>
+            </div>
+            <div class="form-section">
+                <label for="like">What do you like about Crework?</label>
+                <select name="like">
+                    <option disabled selected value="">Select an option</option>
+                    <option value="Community">Community</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Mentors">Mentors and CLs</option>
+                    <option value="all">All of the above</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="suggestions" id="suggestion-label">Any comments or suggestions:</label>
+                <textarea name="suggestions" id="textarea" cols="30" rows="5" spellcheck="false" placeholder="Enter your comment here"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+     font-family: 'Segoe UI', 'Roboto',
+        'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: #000080;
+    margin: 0;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+p {
+    font-style: oblique;
+    font-size: 3vh;
+}
+
+figure {
+    border: 1vh solid black;
+    width: 100vw;
+    background-color: cornflowerblue;
+}
+
+img {
+    height: 60vh;
+    margin-top: 7vh;
+    border: white 1vh solid;
+    
+
+}
+
+figcaption {
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: larger;
+}
+
+section {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+strong,
+li {
+    text-align: justify;
+}
+
+li {
+    padding-bottom: 5px;
+}

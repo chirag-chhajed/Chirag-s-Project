@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 15vh;
+  background-color: orangered;
+  padding-right: 5vw;
+ 
+}
+
+header a {
+  font-family: Poppins, sans-serif;
+  font-size: 5vh;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+header a:hover {
+  color: orangered;
+  background-color: #004b91;
+}
+
+.level1 {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  text-align: center;
+  background-color: honeydew;
+  z-index: 0;
+  padding-top: 15vh;
+}
+
+#about h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 10vh;
+  font-weight: 700;
+}
+
+#about p {
+  font-family: Poppins, sans-serif;
+  font-size: 5vh;
+  font-style: italic;
+}
+
+.level2 {
+  width: 100%;
+  height: 160vh;
+  background-color: lavender;
+  position: absolute;
+  top: 100vh;
+}
+
+.level2 h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 7vh;
+  font-weight: 700;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 500ms;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding-left: 150px;
+}
+
+span {
+  font-family: Poppins, sans-serif;
+  font-size: 3vh;
+  font-style: italic;
+  text-align: center;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+a p {
+  background-color: black;
+}
+
+a p:hover {
+  color: black;
+  background-color: #004b91;
+}
+
+.level3 {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 260vh;
+  background-color: #303841;
+
+}
+
+.level3 h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 9vh;
+  font-weight: 700;
+  text-align: center;
+}
+
+.level3 p {
+  font-family: Poppins, sans-serif;
+  font-size: 5vh;
+  font-style: italic;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-align: center;
+  font-size: 3vh;
+  transition: transform 500ms;
+}
+
+.social-icons a:hover {
+  transform: scale(2);
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  top: 300vh;
+  background-color: #303841;
+  border-top: 5px red solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer p {
+  font-family: Poppins, sans-serif;
+  font-size: 2vh;
+  margin-top: 5vh;
+}
+a{
+  text-decoration: none;
+}
