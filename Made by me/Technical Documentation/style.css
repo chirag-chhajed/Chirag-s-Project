@@ -17,6 +17,10 @@ header {
     transition: box-shadow 500ms;
 
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
 header:hover {
     font-weight: 800;

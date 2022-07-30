@@ -5,8 +5,12 @@ body {
     text-align: center;
     color: #000080;
     margin: 0;
+    background-color: wheat;
 }
-
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 h1 {
     font-size: 8vh;
 }
