@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +20,10 @@
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
 }
+a{
+  text-decoration: none t;
+  text-emphasis: bold;
+}
 body {
   background-color: #111;
 }
@@ -32,10 +39,11 @@ body {
 .logo span {
   font-size: 42px;
   color: #ffac2f;
+ 
 }
 header {
   width: 100vw;
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: space-between;
 }
@@ -45,12 +53,16 @@ header {
   margin-top: 4vh;
   margin-right: 4vw;
   font-size: 4vh;
+
+}
+#navbar a{
+  color: #fff;
 }
 
 .page-section {
   text-align: center;
   width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
 }
 .page-section h1 {
   font-size: 4rem;
@@ -64,19 +76,26 @@ header {
 }
 
 #learnm {
-  height: 75px;
-  width: 200px;
-  border-radius: 10%;
+  max-height: 75px;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 300px;
   font-size: 2rem;
-  background-color: #ffac2f;
-  margin-left: 42vw;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10vh;
   color: #111;
+  font-weight: 800;
 }
+#learnm a{
+  color: #111;
+}
+
+
 .two {
-  position: absolute;
-  top: 100vh;
-  height: 40vh;
+ 
+  min-height: 40vh;
   width: 100vw;
 }
 .two h2 {
@@ -91,40 +110,89 @@ header {
   align-items: center;
   gap: 100px;
 }
+figure{
+  transition: transform 400ms;
+ box-shadow: 0 0 8px 5px silver;
+}
 img {
-  height: 40vh;
-  width: 80vh;
+  height: 12.5rem;
+    width: 25rem;
   object-fit: contain;
-  border: 5px solid black;
+ 
+ 
+}
+figure:hover{
+  transform: scale(1.2);
 }
 figcaption {
-  background-color: white;
+  background-color: gray;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 400ms;
+}
+figcaption:hover{
   color: navy;
-  font-size: 2vh;
 }
 footer {
-  position: absolute;
-  top: 130vh;
-  height: 30vh;
+  margin-top: 10vh;
+  min-height: 30vh;
   width: 100vw;
-  background-color: #111;
+  background-color: #51515182;
 }
-.flex {
+.social-icons{
   display: flex;
-  justify-content: column;
-  gap: 10px;
-}
-.social-icons {
-  display: flex;
-  justify-content: row;
-  align-content: center;
-}
-.bottom {
-  margin-left: none;
-}
-.links {
-  display: flex;
-  gap: 100px;
+  flex-direction: row;
   justify-content: center;
-  align-content: center;
+  margin: 1rem auto;
+  gap: 2rem;
+ 
 }
+.social-icons a{
+  transition: transform 400ms;
+}
+.social-icons a:hover{
+  transform: scale(1.5);
+}
+.links{
+  display: flex;
+  flex-direction: row;
+ margin: 1rem auto;
+ justify-content: space-evenly;
+}
+.links a{
+  transition: transform 400ms;
+}
+
+.links a:hover{
+transform: scale(1.2);
+
+}
+.copy{
+  display: flex;
+  justify-content: center;
+}
+.balls div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #ffac2f;
+  transform: translateY(-100%);
+  animation: wave 0.8s ease-in-out alternate infinite;
+  position: absolute;
+  top: 9%;
+  left: 20%;
+}
+
+
+@keyframes wave {
+  from {
+      transform: translateY(-100%);
+  }
+
+  to {
+      transform: translateY(100%);
+  }
+}
+
+

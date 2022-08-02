@@ -14,7 +14,7 @@ img {
   height: 40vh;
   width: 30vh;
   object-fit: contain;
-  border: 5px solid black;
+ 
 }
 
 .logo {
@@ -34,7 +34,7 @@ img {
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: Raleway, sans-serif;
 }
 
@@ -45,9 +45,23 @@ h1 {
   margin-bottom: 4vh;
   margin-top: 4vh;
 }
+figure{
+  transition: transform 400ms;
+}
+figure:hover{
+  transform: scale(1.2);
+}
 
 figcaption {
-  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 400ms;
+ text-align: center;
+}
+figcaption:hover{
+  color: navy;
 }
 
 h3 {
@@ -61,34 +75,66 @@ article {
   font-size: 1rem;
 }
 
+
 footer {
-  border-top: 2px solid black;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 10vh;
+  min-height: 30vh;
+  width: 100vw;
+  background-color: #51515182;
 }
-
-.flex {
+.social-icons{
   display: flex;
-  justify-content: column;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 2rem;
+ 
 }
-
-.social-icons {
+.social-icons a{
+  transition: transform 400ms;
+}
+.social-icons a:hover{
+  transform: scale(1.5);
+}
+.links{
   display: flex;
-  justify-content: row;
-  align-content: center;
+  flex-direction: row;
+ margin: 1rem auto;
+ justify-content: space-evenly;
+}
+.links a{
+  transition: transform 400ms;
 }
 
-.bottom {
-  margin-left: none;
-}
+.links a:hover{
+transform: scale(1.2);
 
-.links {
+}
+.copy{
   display: flex;
-  gap: 100px;
-  justify-content: end;
-  align-content: center;
+  justify-content: center;
+}
+.balls div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #ffac2f;
+  transform: translateY(-100%);
+  animation: wave 0.8s ease-in-out alternate infinite;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+
+
+@keyframes wave {
+  from {
+      transform: translateY(-100%);
+  }
+
+  to {
+      transform: translateY(100%);
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -103,4 +149,5 @@ footer {
   figcaption {
     text-align: left;
   }
+  
 }
